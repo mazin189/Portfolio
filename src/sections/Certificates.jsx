@@ -65,6 +65,7 @@ export default function Testimonials() {
 
               <div className="flex items-center gap-4">
                 <img
+                  loading="lazy"
                   src={certifications[activeIdx].avatar}
                   alt={certifications[activeIdx].desc}
                   className="rounded-2xl max-w-2xl mx-auto object-cover ring-2 ring-primary/20"
