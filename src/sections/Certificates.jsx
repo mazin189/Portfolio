@@ -1,10 +1,9 @@
 import { Award, ChevronLeft, ChevronRight } from "lucide-react";
-import { useState } from "react";
-import backendImg from "../assets/back-sef.jpg"
-import frontendImg from "../assets/front-sef.jpg"
-import frontAfaaq from "../assets/front-afaaq.jpg"
-import machineLearningImg from "../assets/nti-ml.jpg"
-
+import { useEffect, useState } from "react";
+import backendImg from "../assets/back-sef.jpg";
+import frontendImg from "../assets/front-sef.jpg";
+import frontAfaaq from "../assets/front-afaaq.jpg";
+import machineLearningImg from "../assets/nti-ml.jpg";
 
 const certifications = [
   {
@@ -22,11 +21,31 @@ const certifications = [
   {
     avatar: machineLearningImg,
     desc: "NTI machine learning training",
-  }
+  },
+];
+
+const Images = [
+  {
+    src: backendImg,
+  },
+  {
+    src: frontendImg,
+  },
+  {
+    src: frontAfaaq,
+  },
+  {
+    src: machineLearningImg,
+  },
 ];
 
 export default function Testimonials() {
   const [activeIdx, setActiveIdx] = useState(0);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = Images[activeIdx].src;
+  }, [activeIdx]);
 
   const next = () => {
     setActiveIdx((prev) => (prev + 1) % certifications.length);
@@ -55,7 +74,6 @@ export default function Testimonials() {
           </h2>
         </div>
 
-
         <div className="max-w-4xl mx-auto">
           <div className="relative">
             <div className="glass p-8 rounded-3xl md:p-12 glow-border animate-fade-in animation-delay-200">
@@ -65,7 +83,6 @@ export default function Testimonials() {
 
               <div className="flex items-center gap-4">
                 <img
-                  loading="lazy"
                   src={certifications[activeIdx].avatar}
                   alt={certifications[activeIdx].desc}
                   className="rounded-2xl max-w-2xl mx-auto object-cover ring-2 ring-primary/20"
