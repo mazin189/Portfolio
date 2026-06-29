@@ -2,6 +2,8 @@ import { ArrowRight, ChevronDown, Download } from "lucide-react";
 import { FaGithub, FaLinkedin, FaFacebookF } from "react-icons/fa";
 import { Button } from "../components/Button.jsx";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton.jsx";
+import portfolioImg from "../assets/my-pic.jpeg"
+import heroImg from "../assets/hero-bg.png"
 
 const skills = [
   "HTML",
@@ -24,7 +26,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/src/assets/hero-bg.png"
+          src={heroImg}
           alt="Hero image"
           className="w-full h-full object-cover opacity-40"
         />
@@ -122,7 +124,7 @@ export default function Hero() {
               <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse" />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
-                  src="/src/assets/my-pic.jpeg"
+                  src={portfolioImg}
                   alt="Mazen Ahmed"
                   className="w-full aspect-4/5 object-cover rounded-2xl "
                 />

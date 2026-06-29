@@ -1,13 +1,20 @@
 import { ArrowUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { AnimatedBorderButton } from "/src/components/AnimatedBorderButton.jsx";
+import ecommerceImg from "../assets/e-commerce.png"
+import restaurantImg from "../assets/restaurant.png"
+import portfolioWebsiteImg from "../assets/portfolio.png"
+import staticWebsiteImg from "../assets/first-proj.png"
+import travelWebsiteImg from "../assets/proj2.png"
+
+
 
 const projects = [
   {
     title: "E-Commerce Store",
     description:
       "A responsive online store that provides a smooth shopping experience with product browsing, search, filtering, cart management, and real-time total price calculation.",
-    image: "/src/assets/e-commerce.png",
+    image: {ecommerceImg},
     tags: ["React", "Redux", "Tailwind"],
     link: "https://project6-ashen.vercel.app/",
     github: "https://github.com/mazin189/project6",
@@ -16,7 +23,7 @@ const projects = [
     title: "Restaurant Website",
     description:
       "A responsive restaurant website with a modern design, showcasing menu items, restaurant information, and a smooth user experience across all devices.",
-    image: "/src/assets/restaurant.png",
+    image: {restaurantImg},
     tags: ["HTML", "CSS", "Bootstrap", "Javascript"],
     link: "https://mazin189.github.io/project3/",
     github: "https://github.com/mazin189/project3",
@@ -25,16 +32,16 @@ const projects = [
     title: "Portfolio Website",
     description:
       "Personal portfolio website showcasing projects, skills, and contact information.",
-    image: "/src/assets/portfolio.png",
+    image: {portfolioWebsiteImg},
     tags: ["React", "Tailwind", "Vite"],
     link: "",
-    github: "",
+    github: "https://github.com/mazin189/Portfolio",
   },
   {
     title: "Static Website",
     description:
       "An HTML & CSS project demonstrating modern layouts, creative styling with pseudo-elements, and smooth hover effects.",
-    image: "/src/assets/first-proj.png",
+    image: {staticWebsiteImg},
     tags: ["HTML", "CSS"],
     link: "https://mazin189.github.io/project1/",
     github: "https://github.com/mazin189/project1",
@@ -43,7 +50,7 @@ const projects = [
     title: "Trips Tour",
     description:
       "A visually engaging travel website with interactive destination cards, animated hover effects, local cuisine highlights, and a clean, modern layout.",
-    image: "/src/assets/proj2.png",
+    image: {travelWebsiteImg},
     tags: ["HTML", "CSS"],
     link: "https://mazin189.github.io/project2/",
     github: "https://github.com/mazin189/project2",
