@@ -1,17 +1,15 @@
 import { ArrowUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { AnimatedBorderButton } from "/src/components/AnimatedBorderButton.jsx";
-import ecommerceImg from "../assets/e-commerce.png"
-import restaurantImg from "../assets/restaurant.png"
-import portfolioWebsiteImg from "../assets/portfolio.png"
-import staticWebsiteImg from "../assets/first-proj.png"
-import travelWebsiteImg from "../assets/proj2.png"
-
-
+import ecommerceImg from "../assets/e-commerce.png";
+import restaurantImg from "../assets/restaurant.png";
+import portfolioWebsiteImg from "../assets/portfolio.png";
+import staticWebsiteImg from "../assets/first-proj.png";
+import travelWebsiteImg from "../assets/proj2.png";
 
 const projects = [
   {
-    title: "E-Commerce Store",
+    title: "E-Commerce Frontend Store",
     description:
       "A responsive online store that provides a smooth shopping experience with product browsing, search, filtering, cart management, and real-time total price calculation.",
     image: ecommerceImg,
@@ -54,6 +52,15 @@ const projects = [
     tags: ["HTML", "CSS"],
     link: "https://mazin189.github.io/Trips-Tour/",
     github: "https://github.com/mazin189/Trips-Tour",
+  },
+  {
+    title: "E-Commerce Backend API",
+    description:
+     "RESTful API for an e-commerce store built with Node.js, Express, and MongoDB, supporting JWT authentication, product and category management, user management, and a shopping cart system.",
+    image: ecommerceImg,
+    tags: ["Node.js", "Express", "MongoDB", "JWT"],
+    link: "",
+    github: "",
   },
 ];
 
