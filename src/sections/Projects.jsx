@@ -25,8 +25,8 @@ const projects = [
       "A responsive restaurant website with a modern design, showcasing menu items, restaurant information, and a smooth user experience across all devices.",
     image: restaurantImg,
     tags: ["HTML", "CSS", "Bootstrap", "Javascript"],
-    link: "https://mazin189.github.io/project3/",
-    github: "https://github.com/mazin189/project3",
+    link: "https://mazin189.github.io/restaurant-bootstrap/",
+    github: "https://github.com/mazin189/restaurant-bootstrap",
   },
   {
     title: "Portfolio Website",
@@ -43,8 +43,8 @@ const projects = [
       "An HTML & CSS project demonstrating modern layouts, creative styling with pseudo-elements, and smooth hover effects.",
     image: staticWebsiteImg,
     tags: ["HTML", "CSS"],
-    link: "https://mazin189.github.io/project1/",
-    github: "https://github.com/mazin189/project1",
+    link: "https://mazin189.github.io/static-website/",
+    github: "https://github.com/mazin189/static-website",
   },
   {
     title: "Trips Tour",
@@ -52,8 +52,8 @@ const projects = [
       "A visually engaging travel website with interactive destination cards, animated hover effects, local cuisine highlights, and a clean, modern layout.",
     image: travelWebsiteImg,
     tags: ["HTML", "CSS"],
-    link: "https://mazin189.github.io/project2/",
-    github: "https://github.com/mazin189/project2",
+    link: "https://mazin189.github.io/Trips-Tour/",
+    github: "https://github.com/mazin189/Trips-Tour",
   },
 ];
 
