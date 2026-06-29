@@ -60,7 +60,7 @@ const projects = [
     image: ecommerceImg,
     tags: ["Node.js", "Express", "MongoDB", "JWT"],
     link: "",
-    github: "",
+    github: "https://github.com/mazin189/ecommerce-backend",
   },
 ];
 
