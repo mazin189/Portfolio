@@ -14,7 +14,7 @@ const projects = [
     title: "E-Commerce Store",
     description:
       "A responsive online store that provides a smooth shopping experience with product browsing, search, filtering, cart management, and real-time total price calculation.",
-    image: {ecommerceImg},
+    image: ecommerceImg,
     tags: ["React", "Redux", "Tailwind"],
     link: "https://project6-ashen.vercel.app/",
     github: "https://github.com/mazin189/project6",
@@ -23,7 +23,7 @@ const projects = [
     title: "Restaurant Website",
     description:
       "A responsive restaurant website with a modern design, showcasing menu items, restaurant information, and a smooth user experience across all devices.",
-    image: {restaurantImg},
+    image: restaurantImg,
     tags: ["HTML", "CSS", "Bootstrap", "Javascript"],
     link: "https://mazin189.github.io/project3/",
     github: "https://github.com/mazin189/project3",
@@ -32,7 +32,7 @@ const projects = [
     title: "Portfolio Website",
     description:
       "Personal portfolio website showcasing projects, skills, and contact information.",
-    image: {portfolioWebsiteImg},
+    image: portfolioWebsiteImg,
     tags: ["React", "Tailwind", "Vite"],
     link: "",
     github: "https://github.com/mazin189/Portfolio",
@@ -41,7 +41,7 @@ const projects = [
     title: "Static Website",
     description:
       "An HTML & CSS project demonstrating modern layouts, creative styling with pseudo-elements, and smooth hover effects.",
-    image: {staticWebsiteImg},
+    image: staticWebsiteImg,
     tags: ["HTML", "CSS"],
     link: "https://mazin189.github.io/project1/",
     github: "https://github.com/mazin189/project1",
@@ -50,7 +50,7 @@ const projects = [
     title: "Trips Tour",
     description:
       "A visually engaging travel website with interactive destination cards, animated hover effects, local cuisine highlights, and a clean, modern layout.",
-    image: {travelWebsiteImg},
+    image: travelWebsiteImg,
     tags: ["HTML", "CSS"],
     link: "https://mazin189.github.io/project2/",
     github: "https://github.com/mazin189/project2",
