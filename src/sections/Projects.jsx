@@ -17,7 +17,7 @@ const projects = [
     image: ecommerceImg,
     tags: ["React", "Redux", "Tailwind"],
     link: "https://project6-ashen.vercel.app/",
-    github: "https://github.com/mazin189/project6",
+    github: "https://github.com/mazin189/ecommerce-frontend",
   },
   {
     title: "Restaurant Website",
