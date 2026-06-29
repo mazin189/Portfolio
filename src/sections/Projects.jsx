@@ -34,7 +34,7 @@ const projects = [
       "Personal portfolio website showcasing projects, skills, and contact information.",
     image: portfolioWebsiteImg,
     tags: ["React", "Tailwind", "Vite"],
-    link: "",
+    link: "https://mazin-dev.vercel.app/",
     github: "https://github.com/mazin189/Portfolio",
   },
   {
