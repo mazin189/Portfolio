@@ -74,7 +74,7 @@ export default function Testimonials() {
           </h2>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-xl md:max-w-4xl mx-auto">
           <div className="relative">
             <div className="glass p-8 rounded-3xl md:p-12 glow-border animate-fade-in animation-delay-200">
               <div className="absolute -top-4 left-8 w-12 h-12 rounded-full bg-primary flex items-center justify-center">
@@ -85,7 +85,7 @@ export default function Testimonials() {
                 <img
                   src={certifications[activeIdx].avatar}
                   alt={certifications[activeIdx].desc}
-                  className="rounded-2xl max-w-2xl mx-auto object-cover ring-2 ring-primary/20"
+                  className="rounded-2xl w-auto md:max-w-xl lg:max-w-2xl mx-auto object-cover ring-2 ring-primary/20"
                 />
               </div>
             </div>
