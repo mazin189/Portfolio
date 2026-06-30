@@ -219,7 +219,7 @@ export default function Contact() {
                     href={item.href}
                     className="flex items-center gap-4 p-4 rounded-xl hover:bg-surface transition-colors"
                   >
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center ">
+                    <div className="w-12 h-12 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center ">
                       <item.icon className="w-5 h-5 text-primary" />
                     </div>
 
@@ -227,7 +227,7 @@ export default function Contact() {
                       <div className="text-sm text-muted-foreground">
                         {item.label}
                       </div>
-                      <div className="font-medium">{item.value}</div>
+                      <div className="font-medium break-all">{item.value}</div>
                     </div>
                   </a>
                 ))}
