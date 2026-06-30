@@ -76,7 +76,7 @@ export default function Navbar() {
               </a>
             ))}
             <Button onClick={() => setIsMobileMenuOpen(false)}>
-              <a href="#contact">Contact Me</a>
+              <a target="_blank" href="https://wa.me/201224781126">Contact Me</a>
             </Button>
           </div>
         </div>
