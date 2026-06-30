@@ -2,15 +2,15 @@ import { ArrowRight, ChevronDown, Download } from "lucide-react";
 import { FaGithub, FaLinkedin, FaFacebookF } from "react-icons/fa";
 import { Button } from "../components/Button.jsx";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton.jsx";
-import portfolioImg from "../assets/my-pic.jpeg"
-import heroImg from "../assets/hero-bg.png"
+import portfolioImg from "../assets/my-pic.jpeg";
+import heroImg from "../assets/hero-bg.png";
+
 
 const skills = [
   "HTML",
   "CSS",
   "JAVASCRIPT",
   "TYPESCRIPT",
-  "NEXT.JS",
   "NODEJS",
   "EXPRESS",
   "MONGODB",
@@ -57,7 +57,6 @@ export default function Hero() {
                 Full Stack Developer • MERN Stack
               </span>
             </div>
- 
 
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
@@ -147,15 +146,15 @@ export default function Hero() {
             Technologies I work with
           </p>
           <div className="relative overflow-hidden">
-            <div className="flex animate-marquee">
-              {[...skills, ...skills].map((skill, index) => (
-                <div key={index} className="shrink-0 px-8 py-4">
-                  <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
-                    {skill}
-                  </span>
-                </div>
-              ))}
-            </div>
+              <div className="flex animate-marquee">
+                {[...skills, ...skills].map((skill, index) => (
+                  <div key={index} className="shrink-0 px-8 py-4">
+                    <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
+                      {skill}
+                    </span>
+                  </div>
+                ))}
+              </div>
           </div>
         </div>
 
