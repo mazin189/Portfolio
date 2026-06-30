@@ -56,7 +56,7 @@ const projects = [
   {
     title: "E-Commerce Backend API",
     description:
-     "RESTful API for an e-commerce store built with Node.js, Express, and MongoDB, supporting JWT authentication, product and category management, user management, and a shopping cart system.",
+      "RESTful API for an e-commerce store built with Node.js, Express, and MongoDB, supporting JWT authentication, product and category management, user management, and a shopping cart system.",
     image: ecommerceImg,
     tags: ["Node.js", "Express", "MongoDB", "JWT"],
     link: "https://project6-ashen.vercel.app",
@@ -130,9 +130,15 @@ export default function Projects() {
                   <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
-                  <a href={project.link} target="_blank">
-                    <ArrowUpRight className="w-5 h-5 cursor-pointer text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-                  </a>
+
+                  <div className="flex items-center md:gap-0 gap-4">
+                    <a href={project.link} target="_blank">
+                      <ArrowUpRight className="w-5 h-5 cursor-pointer text-muted-foreground group-hover:text-primary" />
+                    </a>
+                    <a href={project.github} target="_blank">
+                      <FaGithub className="w-5 h-5 cursor-pointer hidden md:visible text-muted-foreground group-hover:text-primary" />
+                    </a>
+                  </div>
                 </div>
                 <p className="text-muted-foreground text-sm">
                   {project.description}
