@@ -59,7 +59,7 @@ const projects = [
      "RESTful API for an e-commerce store built with Node.js, Express, and MongoDB, supporting JWT authentication, product and category management, user management, and a shopping cart system.",
     image: ecommerceImg,
     tags: ["Node.js", "Express", "MongoDB", "JWT"],
-    link: "",
+    link: "https://project6-ashen.vercel.app",
     github: "https://github.com/mazin189/backend-ecommerce",
   },
 ];
