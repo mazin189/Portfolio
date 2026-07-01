@@ -4,8 +4,10 @@ import { Button } from "../components/Button.jsx";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton.jsx";
 import portfolioImg from "../assets/my-pic.jpeg";
 import heroImg from "../assets/hero-bg.png";
-
-
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import horizontalLoop from "../utils/horizontalLoop.jsx";
 const skills = [
   "HTML",
   "CSS",
@@ -22,6 +24,16 @@ const skills = [
 ];
 
 export default function Hero() {
+const marqueeRef = useRef(null);
+
+useGSAP(() => {
+  horizontalLoop(marqueeRef.current.children, {
+  repeat: -1,
+  speed: 1.2,
+  });
+});
+
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
@@ -146,7 +158,7 @@ export default function Hero() {
             Technologies I work with
           </p>
           <div className="relative overflow-hidden">
-              <div className="flex animate-marquee">
+              <div className="flex " ref={marqueeRef}>
                 {[...skills, ...skills].map((skill, index) => (
                   <div key={index} className="shrink-0 px-8 py-4">
                     <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
