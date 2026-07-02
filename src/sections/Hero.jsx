@@ -6,7 +6,6 @@ import portfolioImg from "../assets/my-pic.jpeg";
 import heroImg from "../assets/hero-bg.png";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 import horizontalLoop from "../utils/horizontalLoop.jsx";
 const skills = [
   "HTML",
