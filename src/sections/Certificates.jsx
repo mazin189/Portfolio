@@ -24,28 +24,16 @@ const certifications = [
   },
 ];
 
-const Images = [
-  {
-    src: backendImg,
-  },
-  {
-    src: frontendImg,
-  },
-  {
-    src: frontAfaaq,
-  },
-  {
-    src: machineLearningImg,
-  },
-];
 
 export default function Testimonials() {
   const [activeIdx, setActiveIdx] = useState(0);
 
   useEffect(() => {
-    const img = new Image();
-    img.src = Images[activeIdx].src;
-  }, [activeIdx]);
+    certifications.forEach((certificate) => {
+      const img = new Image();
+      img.src = certificate.avatar;
+    });
+  }, []);
 
   const next = () => {
     setActiveIdx((prev) => (prev + 1) % certifications.length);
