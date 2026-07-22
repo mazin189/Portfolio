@@ -1,11 +1,13 @@
 import { ArrowUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
+import { useState } from "react";
 import { AnimatedBorderButton } from "/src/components/AnimatedBorderButton.jsx";
 import ecommerceImg from "../assets/e-commerce.png";
 import restaurantImg from "../assets/restaurant.png";
 import portfolioWebsiteImg from "../assets/portfolio.png";
 import staticWebsiteImg from "../assets/first-proj.png";
 import travelWebsiteImg from "../assets/proj2.png";
+import bankImg from "../assets/bankImg.png";
 
 const projects = [
   {
@@ -16,6 +18,18 @@ const projects = [
     tags: ["React", "Redux", "Tailwind"],
     link: "https://project6-ashen.vercel.app/",
     github: "https://github.com/mazin189/ecommerce-frontend",
+  },
+  {
+    title: "Full Stack Banking System",
+    description: "",
+    image: bankImg,
+    tags: ["React", "Nodejs", "Express", "MongoDB", "Tailwind"],
+    liveLinks: {
+      frontend: "https://bank-zeta-eight.vercel.app/register",
+      admin: "https://adminbank-three.vercel.app/register",
+      api: "https://bank-lake-psi.vercel.app/",
+    },
+    github: "https://github.com/mazin189/fullstack-bank",
   },
   {
     title: "Restaurant Website",
@@ -65,6 +79,7 @@ const projects = [
 ];
 
 export default function Projects() {
+  const [selectedProject, setSelectedProject] = useState(null);
   return (
     <section id="projects" className="py-32 relative overflow-hidden">
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
@@ -108,13 +123,23 @@ export default function Projects() {
                 <div className="absolute inset-0 bg-linear-to-t from-card via-card/50 to-transparent opacity-60" />
 
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <a
-                    target="_blank"
-                    href={project.link}
-                    className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
-                  >
-                    <ArrowUpRight className="w-5 h-5" />
-                  </a>
+                  {project.liveLinks ? (
+                    <button
+                      onClick={() => setSelectedProject(project)}
+                      className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+                    >
+                      <ArrowUpRight className="w-5 h-5" />
+                    </button>
+                  ) : (
+                    <a
+                      target="_blank"
+                      href={project.link}
+                      className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+                    >
+                      <ArrowUpRight className="w-5 h-5" />
+                    </a>
+                  )}
+
                   <a
                     target="_blank"
                     href={project.github}
@@ -132,9 +157,15 @@ export default function Projects() {
                   </h3>
 
                   <div className="flex items-center md:gap-0 gap-4">
-                    <a href={project.link} target="_blank">
-                      <ArrowUpRight className="w-5 h-5 cursor-pointer text-muted-foreground group-hover:text-primary" />
-                    </a>
+                    {project.liveLinks ? (
+                      <button onClick={() => setSelectedProject(project)}>
+                        <ArrowUpRight className="w-5 h-5 cursor-pointer text-muted-foreground group-hover:text-primary" />
+                      </button>
+                    ) : (
+                      <a href={project.link} target="_blank">
+                        <ArrowUpRight className="w-5 h-5 cursor-pointer text-muted-foreground group-hover:text-primary" />
+                      </a>
+                    )}
                     <a href={project.github} target="_blank">
                       <FaGithub className="w-5 h-5 cursor-pointer block md:hidden text-muted-foreground group-hover:text-primary" />
                     </a>
@@ -165,6 +196,51 @@ export default function Projects() {
           </AnimatedBorderButton>
         </div> */}
       </div>
+
+      {selectedProject && (
+        <div
+          onClick={() => setSelectedProject(null)}
+          className="fixed inset-0 bg-black/60 flex items-center justify-center z-50"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="glass rounded-2xl p-6 w-87.5 space-y-4"
+          >
+            <h2 className="text-2xl font-bold text-center">Choose Demo</h2>
+
+            <a
+              href={selectedProject.liveLinks.frontend}
+              target="_blank"
+              className="block p-3 rounded-lg hover:bg-white/10"
+            >
+              🌐 Frontend
+            </a>
+
+            <a
+              href={selectedProject.liveLinks.admin}
+              target="_blank"
+              className="block p-3 rounded-lg hover:bg-white/10"
+            >
+              ⚙️ Admin
+            </a>
+
+            <a
+              href={selectedProject.liveLinks.api}
+              target="_blank"
+              className="block p-3 rounded-lg hover:bg-white/10"
+            >
+              📖 API
+            </a>
+
+            <button
+              onClick={() => setSelectedProject(null)}
+              className="w-full mt-2 p-3 rounded-lg bg-red-500 hover:bg-red-600"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
