@@ -21,7 +21,7 @@ const projects = [
   },
   {
     title: "Full Stack Banking System",
-    description: "",
+    description: "A full-stack banking system built with React, Node.js, Express, and MongoDB, featuring secure JWT authentication, bank card management, money transfers, Stripe-powered deposits, withdrawals, real-time notifications, and a dedicated admin dashboard, all backed by a RESTful API.",
     image: bankImg,
     tags: ["React", "Nodejs", "Express", "MongoDB", "Tailwind"],
     liveLinks: {
