@@ -21,13 +21,13 @@ const projects = [
   },
   {
     title: "Full Stack Banking System",
-    description: "A full-stack banking system built with React, Node.js, Express, and MongoDB, featuring secure JWT authentication, bank card management, money transfers, Stripe-powered deposits, withdrawals, real-time notifications, and a dedicated admin dashboard, all backed by a RESTful API.",
+    description:
+      "A full-stack banking system built with React, Node.js, Express, and MongoDB, featuring secure JWT authentication, bank card management, money transfers, Stripe-powered deposits, withdrawals, real-time notifications, and a dedicated admin dashboard, all backed by a RESTful API.",
     image: bankImg,
     tags: ["React", "Nodejs", "Express", "MongoDB", "Tailwind"],
     liveLinks: {
       frontend: "https://bank-zeta-eight.vercel.app/register",
       admin: "https://adminbank-three.vercel.app/register",
-      api: "https://bank-lake-psi.vercel.app/",
     },
     github: "https://github.com/mazin189/fullstack-bank",
   },
@@ -206,14 +206,14 @@ export default function Projects() {
             onClick={(e) => e.stopPropagation()}
             className="glass rounded-2xl p-6 w-87.5 space-y-4"
           >
-            <h2 className="text-2xl font-bold text-center">Choose Demo</h2>
+            <h2 className="text-2xl font-bold text-center">Choose Live Demo</h2>
 
             <a
               href={selectedProject.liveLinks.frontend}
               target="_blank"
               className="block p-3 rounded-lg hover:bg-white/10"
             >
-              🌐 Frontend
+              🌐 User Website
             </a>
 
             <a
@@ -221,17 +221,8 @@ export default function Projects() {
               target="_blank"
               className="block p-3 rounded-lg hover:bg-white/10"
             >
-              ⚙️ Admin
+              ⚙️ Admin Dashboard
             </a>
-
-            <a
-              href={selectedProject.liveLinks.api}
-              target="_blank"
-              className="block p-3 rounded-lg hover:bg-white/10"
-            >
-              📖 API
-            </a>
-
             <button
               onClick={() => setSelectedProject(null)}
               className="w-full mt-2 p-3 rounded-lg bg-red-500 hover:bg-red-600"
