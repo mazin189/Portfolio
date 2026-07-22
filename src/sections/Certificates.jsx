@@ -4,6 +4,7 @@ import backendImg from "../assets/back-sef.jpg";
 import frontendImg from "../assets/front-sef.jpg";
 import frontAfaaq from "../assets/front-afaaq.jpg";
 import machineLearningImg from "../assets/nti-ml.jpg";
+import nodejsHumaVolve from "../assets/Nodejs-certification.png"
 
 const certifications = [
   {
@@ -22,6 +23,10 @@ const certifications = [
     avatar: machineLearningImg,
     desc: "NTI machine learning training",
   },
+  {
+    avatar: nodejsHumaVolve,
+    desc: "Nodejs Huma volve training"
+  }
 ];
 
 
