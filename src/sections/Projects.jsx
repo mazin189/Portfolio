@@ -1,7 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
-import { AnimatedBorderButton } from "/src/components/AnimatedBorderButton.jsx";
+// import { AnimatedBorderButton } from "/src/components/AnimatedBorderButton.jsx";
 import ecommerceImg from "../assets/e-commerce.png";
 import restaurantImg from "../assets/restaurant.png";
 import portfolioWebsiteImg from "../assets/portfolio.png";
