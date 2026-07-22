@@ -94,7 +94,7 @@ useGSAP(() => {
               <AnimatedBorderButton>
                 <a
                   className="flex items-center gap-2"
-                  href="/Mazin-cv.pdf"
+                  href="/Mazen-cv.pdf"
                   download
                 >
                   <Download className="w-5 h-5" /> Download CV
