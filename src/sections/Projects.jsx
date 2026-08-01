@@ -11,15 +11,6 @@ import bankImg from "../assets/bankImg.png";
 
 const projects = [
   {
-    title: "E-Commerce Frontend Store",
-    description:
-      "A responsive online store that provides a smooth shopping experience with product browsing, search, filtering, cart management, and real-time total price calculation.",
-    image: ecommerceImg,
-    tags: ["React", "Redux", "Tailwind"],
-    link: "https://project6-ashen.vercel.app/",
-    github: "https://github.com/mazin189/ecommerce-frontend",
-  },
-  {
     title: "Full Stack Banking System",
     description:
       "A full-stack banking system built with React, Node.js, Express, and MongoDB, featuring secure JWT authentication, bank card management, money transfers, Stripe-powered deposits, withdrawals, real-time notifications, and a dedicated admin dashboard, all backed by a RESTful API.",
@@ -31,6 +22,18 @@ const projects = [
     },
     github: "https://github.com/mazin189/fullstack-bank",
   },
+    {
+    title: "E-Commerce Admin Dashboard",
+    description:
+      "A comprehensive admin dashboard for managing an e-commerce store, featuring product management, order processing, user administration, and analytics.",
+    image: bankImg,
+    tags: ["React", "Github", "Tailwind"],
+    liveLinks: {
+      frontend: "https://e-commerce-store-ruddy.vercel.app/",
+      admin: "https://ecommerce-admin-dashboard-chi-amber.vercel.app/",
+    },
+    github: "https://github.com/mazin189/E-Commerce-Store-Admin-Dashboard",
+  },
   {
     title: "Restaurant Website",
     description:
@@ -39,6 +42,15 @@ const projects = [
     tags: ["HTML", "CSS", "Bootstrap", "Javascript"],
     link: "https://mazin189.github.io/restaurant-bootstrap/",
     github: "https://github.com/mazin189/restaurant-bootstrap",
+  },
+   {
+    title: "E-Commerce Frontend Store",
+    description:
+      "A responsive online store that provides a smooth shopping experience with product browsing, search, filtering, cart management, and real-time total price calculation.",
+    image: ecommerceImg,
+    tags: ["React", "Redux", "Tailwind"],
+    link: "https://project6-ashen.vercel.app/",
+    github: "https://github.com/mazin189/ecommerce-frontend",
   },
   {
     title: "Portfolio Website",
