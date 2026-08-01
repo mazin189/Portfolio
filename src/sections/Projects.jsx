@@ -216,7 +216,11 @@ export default function Projects() {
             
           >
             <AnimatedBorderButton
-            onClick={loadProjects}
+            onClick={()=> {
+              setTimeout(() => {
+                loadProjects();
+              }, 600);
+            }}
             >
               Load More
               <ArrowUpRight className="w-5 h-5" />
