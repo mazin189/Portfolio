@@ -89,83 +89,17 @@ const projects = [
     link: "https://mazin189.github.io/Trips-Tour/",
     github: "https://github.com/mazin189/Trips-Tour",
   },
-    {
-    title: "Trips Tour",
-    description:
-      "A visually engaging travel website with interactive destination cards, animated hover effects, local cuisine highlights, and a clean, modern layout.",
-    image: travelWebsiteImg,
-    tags: ["HTML", "CSS"],
-    link: "https://mazin189.github.io/Trips-Tour/",
-    github: "https://github.com/mazin189/Trips-Tour",
-  },
-    {
-    title: "Trips Tour",
-    description:
-      "A visually engaging travel website with interactive destination cards, animated hover effects, local cuisine highlights, and a clean, modern layout.",
-    image: travelWebsiteImg,
-    tags: ["HTML", "CSS"],
-    link: "https://mazin189.github.io/Trips-Tour/",
-    github: "https://github.com/mazin189/Trips-Tour",
-  },
-    {
-    title: "Trips Tour",
-    description:
-      "A visually engaging travel website with interactive destination cards, animated hover effects, local cuisine highlights, and a clean, modern layout.",
-    image: travelWebsiteImg,
-    tags: ["HTML", "CSS"],
-    link: "https://mazin189.github.io/Trips-Tour/",
-    github: "https://github.com/mazin189/Trips-Tour",
-  },
-    {
-    title: "Trips Tour",
-    description:
-      "A visually engaging travel website with interactive destination cards, animated hover effects, local cuisine highlights, and a clean, modern layout.",
-    image: travelWebsiteImg,
-    tags: ["HTML", "CSS"],
-    link: "https://mazin189.github.io/Trips-Tour/",
-    github: "https://github.com/mazin189/Trips-Tour",
-  },
-    {
-    title: "Trips Tour",
-    description:
-      "A visually engaging travel website with interactive destination cards, animated hover effects, local cuisine highlights, and a clean, modern layout.",
-    image: travelWebsiteImg,
-    tags: ["HTML", "CSS"],
-    link: "https://mazin189.github.io/Trips-Tour/",
-    github: "https://github.com/mazin189/Trips-Tour",
-  },
-    {
-    title: "Trips Tour",
-    description:
-      "A visually engaging travel website with interactive destination cards, animated hover effects, local cuisine highlights, and a clean, modern layout.",
-    image: travelWebsiteImg,
-    tags: ["HTML", "CSS"],
-    link: "https://mazin189.github.io/Trips-Tour/",
-    github: "https://github.com/mazin189/Trips-Tour",
-  },
-    {
-    title: "Trips Tour",
-    description:
-      "A visually engaging travel website with interactive destination cards, animated hover effects, local cuisine highlights, and a clean, modern layout.",
-    image: travelWebsiteImg,
-    tags: ["HTML", "CSS"],
-    link: "https://mazin189.github.io/Trips-Tour/",
-    github: "https://github.com/mazin189/Trips-Tour",
-  },
 ];
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [visibleProjects, setVisibleProjects] = useState(6);
   const [clicked, setClicked] = useState(true);
+  
   const loadProjects = () => {
-    const scrollHeight = window.scrollY;
     const numberOfProjects = projects.length;
     setVisibleProjects(numberOfProjects);
     setClicked(false);
-    setTimeout(() => {
-      window.scrollTo(0,scrollHeight)
-    }, 0);
   };
   return (
     <section id="projects" className="py-32 relative overflow-hidden">
