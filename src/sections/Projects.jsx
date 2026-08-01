@@ -8,6 +8,7 @@ import portfolioWebsiteImg from "../assets/portfolio.png";
 import staticWebsiteImg from "../assets/first-proj.png";
 import travelWebsiteImg from "../assets/proj2.png";
 import bankImg from "../assets/bankImg.png";
+import eCommerceDashboardImg from "../assets/ecom-dashboard.png"
 
 const projects = [
   {
@@ -26,7 +27,7 @@ const projects = [
     title: "E-Commerce Admin Dashboard",
     description:
       "A comprehensive admin dashboard for managing an e-commerce store, featuring product management, order processing, user administration, and analytics.",
-    image: bankImg,
+    image: eCommerceDashboardImg,
     tags: ["React", "Github", "Tailwind"],
     liveLinks: {
       frontend: "https://e-commerce-store-ruddy.vercel.app/",
