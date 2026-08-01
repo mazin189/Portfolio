@@ -213,9 +213,11 @@ export default function Projects() {
         {clicked && (
           <div
             className="text-center mt-12 animate-fade-in animation-delay-500"
-            onClick={loadProjects}
+            
           >
-            <AnimatedBorderButton>
+            <AnimatedBorderButton
+            onClick={loadProjects}
+            >
               Load More
               <ArrowUpRight className="w-5 h-5" />
             </AnimatedBorderButton>
