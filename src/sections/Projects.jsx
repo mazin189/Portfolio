@@ -63,15 +63,6 @@ const projects = [
     github: "https://github.com/mazin189/Portfolio",
   },
   {
-    title: "E-Commerce Backend API",
-    description:
-      "RESTful API for an e-commerce store built with Node.js, Express, and MongoDB, supporting JWT authentication, product and category management, user management, and a shopping cart system.",
-    image: ecommerceImg,
-    tags: ["Node.js", "Express", "MongoDB", "JWT"],
-    link: "https://project6-ashen.vercel.app",
-    github: "https://github.com/mazin189/backend-ecommerce",
-  },
-  {
     title: "Static Website",
     description:
       "An HTML & CSS project demonstrating modern layouts, creative styling with pseudo-elements, and smooth hover effects.",
@@ -79,6 +70,15 @@ const projects = [
     tags: ["HTML", "CSS"],
     link: "https://mazin189.github.io/static-website/",
     github: "https://github.com/mazin189/static-website",
+  },
+  {
+    title: "E-Commerce Backend API",
+    description:
+      "RESTful API for an e-commerce store built with Node.js, Express, and MongoDB, supporting JWT authentication, product and category management, user management, and a shopping cart system.",
+    image: ecommerceImg,
+    tags: ["Node.js", "Express", "MongoDB", "JWT"],
+    link: "https://project6-ashen.vercel.app",
+    github: "https://github.com/mazin189/backend-ecommerce",
   },
   {
     title: "Trips Tour",
