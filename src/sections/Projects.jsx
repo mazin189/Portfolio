@@ -1,14 +1,14 @@
 import { ArrowUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
-// import { AnimatedBorderButton } from "/src/components/AnimatedBorderButton.jsx";
+import { AnimatedBorderButton } from "/src/components/AnimatedBorderButton.jsx";
 import ecommerceImg from "../assets/e-commerce.png";
 import restaurantImg from "../assets/restaurant.png";
 import portfolioWebsiteImg from "../assets/portfolio.png";
 import staticWebsiteImg from "../assets/first-proj.png";
 import travelWebsiteImg from "../assets/proj2.png";
 import bankImg from "../assets/bankImg.png";
-import eCommerceDashboardImg from "../assets/ecom-dashboard.png"
+import eCommerceDashboardImg from "../assets/ecom-dashboard.png";
 
 const projects = [
   {
@@ -23,7 +23,7 @@ const projects = [
     },
     github: "https://github.com/mazin189/fullstack-bank",
   },
-    {
+  {
     title: "E-Commerce Admin Dashboard",
     description:
       "Collaborated with a team to develop a responsive e-commerce platform featuring product browsing, filtering, shopping cart, wishlist, order management, and secure authentication. Integrated RESTful APIs using Axios and built a comprehensive admin dashboard for managing products, users, carts, orders, and store settings.",
@@ -44,7 +44,7 @@ const projects = [
     link: "https://mazin189.github.io/restaurant-bootstrap/",
     github: "https://github.com/mazin189/restaurant-bootstrap",
   },
-   {
+  {
     title: "E-Commerce Frontend Store",
     description:
       "A responsive online store that provides a smooth shopping experience with product browsing, search, filtering, cart management, and real-time total price calculation.",
@@ -93,6 +93,13 @@ const projects = [
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [visibleProjects, setVisibleProjects] = useState(6);
+  const [clicked, setClicked] = useState(true);
+  const loadProjects = () => {
+    const numberOfProjects = projects.length;
+    setVisibleProjects(numberOfProjects);
+    setClicked(false);
+  };
   return (
     <section id="projects" className="py-32 relative overflow-hidden">
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
@@ -117,7 +124,7 @@ export default function Projects() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {projects.slice(0, visibleProjects).map((project, index) => (
             <div
               key={index}
               className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
@@ -202,12 +209,17 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <AnimatedBorderButton>
-            View All Projects
-            <ArrowUpRight className="w-5 h-5" />
-          </AnimatedBorderButton>
-        </div> */}
+        {clicked && (
+          <div
+            className="text-center mt-12 animate-fade-in animation-delay-500"
+            onClick={loadProjects}
+          >
+            <AnimatedBorderButton>
+              Load More
+              <ArrowUpRight className="w-5 h-5" />
+            </AnimatedBorderButton>
+          </div>
+        )}
       </div>
 
       {selectedProject && (
