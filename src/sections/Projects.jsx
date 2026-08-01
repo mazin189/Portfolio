@@ -26,9 +26,9 @@ const projects = [
     {
     title: "E-Commerce Admin Dashboard",
     description:
-      "A comprehensive admin dashboard for managing an e-commerce store, featuring product management, order processing, user administration, and analytics.",
+      "Collaborated with a team to develop a responsive e-commerce platform featuring product browsing, filtering, shopping cart, wishlist, order management, and secure authentication. Integrated RESTful APIs using Axios and built a comprehensive admin dashboard for managing products, users, carts, orders, and store settings.",
     image: eCommerceDashboardImg,
-    tags: ["React", "Github", "Tailwind"],
+    tags: ["React", "Context API", "Tailwind", "API Integration"],
     liveLinks: {
       frontend: "https://e-commerce-store-ruddy.vercel.app/",
       admin: "https://ecommerce-admin-dashboard-chi-amber.vercel.app/",
