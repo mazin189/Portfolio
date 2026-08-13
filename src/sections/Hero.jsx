@@ -65,7 +65,7 @@ useGSAP(() => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Full Stack Developer • MERN Stack
+                Full Stack Developer
               </span>
             </div>
 
@@ -80,8 +80,8 @@ useGSAP(() => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Mazen Ahmed — a Full Stack MERN Developer specializing
-                in React, Node.js, Express.js, and MongoDB. I build scalable,
+                Hi, I'm Mazen Ahmed — a Full Stack Developer specializing
+                in React, Next.js, Node, Express.js, PostgreSQL and MongoDB. I build scalable,
                 performant web applications that users love.
               </p>
             </div>
@@ -143,7 +143,7 @@ useGSAP(() => {
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
                     <span className="text-sm font-medium">
-                      MERN Stack Developer
+                      Full Stack Developer
                     </span>
                   </div>
                 </div>

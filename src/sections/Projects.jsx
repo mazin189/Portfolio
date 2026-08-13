@@ -9,6 +9,7 @@ import staticWebsiteImg from "../assets/first-proj.png";
 import travelWebsiteImg from "../assets/proj2.png";
 import bankImg from "../assets/bankImg.png";
 import eCommerceDashboardImg from "../assets/ecom-dashboard.png";
+import realEstateImg from "../assets/next-estate.png"
 
 const projects = [
   {
@@ -23,6 +24,25 @@ const projects = [
     },
     github: "https://github.com/mazin189/fullstack-bank",
   },
+  {
+  title: "Real Estate Marketplace",
+  description:
+    "A full-stack real estate marketplace with property listings, authentication, advanced search and filtering, image uploads, agent contact, and responsive design.",
+  image: realEstateImg,
+  tags: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Prisma",
+    "PostgreSQL",
+    "Neon",
+    "Cloudinary",
+    "Better Auth",
+    "Zustand"
+  ],
+  link: "https://next-estate-ashen.vercel.app",
+  github: "https://github.com/mazin189/Next-Estate",
+},
   {
     title: "E-Commerce Admin Dashboard",
     description:
