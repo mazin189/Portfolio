@@ -27,7 +27,7 @@ const projects = [
   {
   title: "Real Estate Marketplace",
   description:
-    "A full-stack real estate marketplace with property listings, authentication, advanced search and filtering, image uploads, agent contact, and responsive design.",
+  "A full-stack real estate marketplace where users can browse, search, and filter properties, view property details, create listings, and contact agents. Built with authentication, image uploads, database integration, and a responsive modern UI.",
   image: realEstateImg,
   tags: [
     "Next.js",
