@@ -6,7 +6,7 @@ import frontAfaaq from "../assets/front-afaaq.jpg";
 import machineLearningImg from "../assets/nti-ml.jpg";
 import nodejsHumaVolve from "../assets/Nodejs-certification.png"
 import frontTraining from "../assets/front-training.jpg"
-import reactTraining from "../assets/React_Training"
+import reactTraining from "../assets/React_Training.jpg"
 
 const certifications = [
   {
