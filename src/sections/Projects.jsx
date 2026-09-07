@@ -9,7 +9,8 @@ import staticWebsiteImg from "../assets/first-proj.png";
 import travelWebsiteImg from "../assets/proj2.png";
 import bankImg from "../assets/bankImg.png";
 import eCommerceDashboardImg from "../assets/ecom-dashboard.png";
-import realEstateImg from "../assets/next-estate.png"
+import realEstateImg from "../assets/next-estate.png";
+import schoolImg from "../assets/school..png";
 
 const projects = [
   {
@@ -25,25 +26,6 @@ const projects = [
     github: "https://github.com/mazin189/fullstack-bank",
   },
   {
-  title: "Real Estate Marketplace",
-  description:
-  "A full-stack real estate marketplace where users can browse, search, and filter properties, view property details, create listings, and contact agents. Built with authentication, image uploads, database integration, and a responsive modern UI.",
-  image: realEstateImg,
-  tags: [
-    "Next.js",
-    "TypeScript",
-    "Tailwind CSS",
-    "Prisma",
-    "PostgreSQL",
-    "Neon",
-    "Cloudinary",
-    "Better Auth",
-    "Zustand"
-  ],
-  link: "https://next-estate-ashen.vercel.app",
-  github: "https://github.com/mazin189/Next-Estate",
-},
-  {
     title: "E-Commerce Admin Dashboard",
     description:
       "Collaborated with a team to develop a responsive e-commerce platform featuring product browsing, filtering, shopping cart, wishlist, order management, and secure authentication. Integrated RESTful APIs using Axios and built a comprehensive admin dashboard for managing products, users, carts, orders, and store settings.",
@@ -54,6 +36,43 @@ const projects = [
       admin: "https://ecommerce-admin-dashboard-chi-amber.vercel.app/",
     },
     github: "https://github.com/mazin189/E-Commerce-Store-Admin-Dashboard",
+  },
+  {
+    title: "AI-Powered School Management API",
+    description:
+      "A backend-focused school management system API that provides secure authentication, role-based access control, academic management, exams, attendance, timetable management, activity logging, and AI-powered timetable generation. Built with a scalable REST API architecture and background workflows using Inngest.",
+    image: schoolImg,
+    tags: [
+      "Node.js",
+      "Express.js",
+      "TypeScript",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "Inngest",
+      "Google Gemini AI",
+      "REST API",
+    ],
+    github: "https://github.com/mazin189/ai-powered-school-management-api",
+  },
+  {
+    title: "Real Estate Marketplace",
+    description:
+      "A full-stack real estate marketplace where users can browse, search, and filter properties, view property details, create listings, and contact agents. Built with authentication, image uploads, database integration, and a responsive modern UI.",
+    image: realEstateImg,
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "PostgreSQL",
+      "Neon",
+      "Cloudinary",
+      "Better Auth",
+      "Zustand",
+    ],
+    link: "https://next-estate-ashen.vercel.app",
+    github: "https://github.com/mazin189/Next-Estate",
   },
   {
     title: "Restaurant Website",
@@ -115,7 +134,7 @@ export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [visibleProjects, setVisibleProjects] = useState(6);
   const [clicked, setClicked] = useState(true);
-  
+
   const loadProjects = () => {
     const numberOfProjects = projects.length;
     setVisibleProjects(numberOfProjects);
@@ -231,16 +250,13 @@ export default function Projects() {
         </div>
 
         {clicked && (
-          <div
-            className="text-center mt-12 animate-fade-in animation-delay-500"
-            
-          >
+          <div className="text-center mt-12 animate-fade-in animation-delay-500">
             <AnimatedBorderButton
-            onClick={()=> {
-              setTimeout(() => {
-                loadProjects();
-              }, 600);
-            }}
+              onClick={() => {
+                setTimeout(() => {
+                  loadProjects();
+                }, 600);
+              }}
             >
               Load More
               <ArrowUpRight className="w-5 h-5" />
