@@ -190,7 +190,7 @@ export default function Projects() {
                     >
                       <ArrowUpRight className="w-5 h-5" />
                     </button>
-                  ) : (
+                  ) : project.link ? (
                     <a
                       target="_blank"
                       href={project.link}
@@ -198,7 +198,7 @@ export default function Projects() {
                     >
                       <ArrowUpRight className="w-5 h-5" />
                     </a>
-                  )}
+                  ): null}
 
                   <a
                     target="_blank"
@@ -221,11 +221,11 @@ export default function Projects() {
                       <button onClick={() => setSelectedProject(project)}>
                         <ArrowUpRight className="w-5 h-5 cursor-pointer text-muted-foreground group-hover:text-primary" />
                       </button>
-                    ) : (
+                    ) :  project.link ? (
                       <a href={project.link} target="_blank">
                         <ArrowUpRight className="w-5 h-5 cursor-pointer text-muted-foreground group-hover:text-primary" />
                       </a>
-                    )}
+                    ): null}
                     <a href={project.github} target="_blank">
                       <FaGithub className="w-5 h-5 cursor-pointer block md:hidden text-muted-foreground group-hover:text-primary" />
                     </a>
