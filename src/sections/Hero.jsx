@@ -80,8 +80,8 @@ useGSAP(() => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Mazen Ahmed — a Full Stack Developer specializing
-                in React, Next.js, Node, Express.js, PostgreSQL and MongoDB. I build scalable,
+                Hi, I'm Mazen Ahmed — a Full Stack Developer specializing 
+                in MERN Stack, Next.js, TypeScript, Nest.js and PostgreSQL. I build scalable, 
                 performant web applications that users love.
               </p>
             </div>
@@ -94,7 +94,7 @@ useGSAP(() => {
               <AnimatedBorderButton>
                 <a
                   className="flex items-center gap-2"
-                  href="/mazin-cv.pdf"
+                  href="/MazenAhmed_CV.pdf"
                   download
                 >
                   <Download className="w-5 h-5" /> Download CV
