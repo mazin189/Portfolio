@@ -55,7 +55,7 @@ export default function About() {
                 reliable, and easy to use.
               </p>
               <p>
-                I work primarily with React,Next.js, Node, Nest.js,Postgresql and MongoDB,
+                I work primarily with React, Next.js, Node, Nest.js,Postgresql and MongoDB,
                 focusing on building complete web applications from frontend to
                 backend. I value simplicity, well-structured code, and solving
                 problems with solutions that are easy to maintain.
