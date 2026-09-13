@@ -49,7 +49,7 @@ export default function About() {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a Full Stack MERN Developer who enjoys turning ideas into
+                I'm a Full Stack Developer who enjoys turning ideas into
                 web applications. What started as curiosity about how websites
                 work has become a drive to build projects that are practical,
                 reliable, and easy to use.
